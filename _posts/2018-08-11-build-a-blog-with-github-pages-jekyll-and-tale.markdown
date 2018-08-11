@@ -45,7 +45,7 @@ cd my_blog
 make a Gemfile to help you install Jekyll
 ```
 echo "source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins" > test
+gem 'github-pages', group: :jekyll_plugins" > Gemfile
 ```
 
 run `bundle install`
@@ -127,7 +127,7 @@ Find a cool theme for your site, <http://http://jekyllthemes.org/>
 
 You can almost find all FAQs here, <https://help.github.com/categories/customizing-github-pages/>
 
-Reference
+References
 ----
 * Official Jekyll website, <https://jekyllrb.com/>, accessed Aug 11, 2018.
 * Official Github Pages website, <https://pages.github.com/>, accessed Aug 11, 2018.
