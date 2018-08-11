@@ -20,12 +20,24 @@ print_hi('Tom')
 a code block
 ```
 
+default md code block for R
 ```R
-  # calculation for indicator 11
-  sp@data$pvCount <- sp@data$aud7800_15599 + sp@data$aud15600_20799 + sp@data$aud20800_25999 + sp@data$aud26000_33799
-  sp@data$pvRatio <- sp@data$pvCount / sp@data$totaldwelling
+# calculation
+sp@data$pvCount <- sp@data$aud7800_15599 + sp@data$aud15600_20799
+sp@data$pvRatio <- sp@data$pvCount / sp@data$totaldwelling
   
-  # trunc data
-  sp_0 = subset(sp, select=c(id, gid, sa2_main16, sa2_name16, totaldwelling, pvCount, pvRatio))
-  names(sp_0)[5] <- "dwCount"
+# trunc data
+sp_0 = subset(sp, select=c(id, gid, sa2_main16, sa2_name16, totaldwelling, pvCount, pvRatio))
+names(sp_0)[5] <- "dwCount"
 ```
+
+jekyll code block for R
+{% highlight R %}
+# calculation
+sp@data$pvCount <- sp@data$aud7800_15599 + sp@data$aud15600_20799
+sp@data$pvRatio <- sp@data$pvCount / sp@data$totaldwelling
+  
+# trunc data
+sp_0 = subset(sp, select=c(id, gid, sa2_main16, sa2_name16, totaldwelling, pvCount, pvRatio))
+names(sp_0)[5] <- "dwCount"
+{% endhighlight %}
