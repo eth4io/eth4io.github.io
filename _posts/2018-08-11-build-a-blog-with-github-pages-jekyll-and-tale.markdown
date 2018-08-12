@@ -23,7 +23,7 @@ Why Github Pages + Jekyll is good
 What You Will Get
 ----
 * A static blog like **[eth4io's Dev Blog](https://eth4io.github.io/)**
-* which is powered by **[Jekill](https://jekyllrb.com/)**, a simple, blog-aware, static site generator.
+* which is powered by **[Jekyll](https://jekyllrb.com/)**, a simple, blog-aware, static site generator.
 * and hosted on **[Github Page](https://github.com/)**, a website hosted directly from your GitHub repository
 
 Get Started
@@ -125,7 +125,7 @@ Configure your sites, <https://help.github.com/articles/configuring-jekyll/>
 
 Find a cool theme for your site, <http://http://jekyllthemes.org/>
 
-You can almost find all FAQs here, <https://help.github.com/categories/customizing-github-pages/>
+You can find all almost FAQs here, <https://help.github.com/categories/customizing-github-pages/>
 
 References
 ----
