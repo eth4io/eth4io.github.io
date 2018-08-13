@@ -115,17 +115,21 @@ The structure of a basic Jekyll site usually looks like
 └── index.html # can also be an 'index.md' with valid YAML Frontmatter
 ```
 
-The first step might be edit `_config.yml` to customize your site with your own title, name, etc.
+The first step after build a cool Jekyll site, customize it.
+
+edit `_config.yml` to customize your site with your own title, name, etc.
 
 Then create a new post in `_posts` directory to test how it works.
+
+
 
 Further reading
 ----
 Configure your sites, <https://help.github.com/articles/configuring-jekyll/>
 
-Find a cool theme for your site, <http://http://jekyllthemes.org/>
+Find a cool theme for your site, <http://http://jekyllthemes.org/>. (This site used [Tale](https://github.com/chesterhow/tale))
 
-You can find all almost FAQs here, <https://help.github.com/categories/customizing-github-pages/>
+You can find almost all FAQs here, <https://help.github.com/categories/customizing-github-pages/>
 
 References
 ----
