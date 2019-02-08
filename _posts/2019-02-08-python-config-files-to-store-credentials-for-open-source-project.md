@@ -10,11 +10,11 @@ author: eth4io
 
 
 
-a config file helps an open source project ignore the credentials which you probabaly don't want to push it to a public repository.
+A config file helps an open source project ignore the credentials which you probabaly don't want to push it to a public repository.
 
 
 
-`config.json`
+config.json
 
 ```json
 {
@@ -27,10 +27,10 @@ a config file helps an open source project ignore the credentials which you prob
 ```python
 import os
 
-def init():
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    PASSWORD = 'PASSWORD'
+DIR_PATH = os.path.dirname(os.path.realpath(__file__))
+PASSWORD = 'PASSWORD'
 
+def init():
     with open(dir_path + '/config.json') as config_json:
         config = json.load(config_json)
         password = config[PASSWORD]
@@ -39,7 +39,7 @@ def init():
 
 
 
-.gitignore
+Add `.gitignore` to ignore the config file
 
 ```
 config.json
