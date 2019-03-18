@@ -19,6 +19,7 @@ config.json
 ```json
 {
     "password":"my_password",
+    "credentials":"my_credentials"
 }
 ```
 
@@ -26,14 +27,17 @@ config.json
 
 ```python
 import os
+import json
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
-PASSWORD = 'PASSWORD'
+PASSWORD = 'password'
+CREDENTIALS = 'credentials'
 
 def init():
-    with open(dir_path + '/config.json') as config_json:
+    with open(DIR_PATH  + '/config.json') as config_json:
         config = json.load(config_json)
         password = config[PASSWORD]
+        credentials = config[CREDENTIALS]
 
 ```
 
