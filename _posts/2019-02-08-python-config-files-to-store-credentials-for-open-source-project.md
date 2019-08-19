@@ -30,14 +30,12 @@ import os
 import json
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
-PASSWORD = 'password'
-CREDENTIALS = 'credentials'
 
 def init():
-    with open(DIR_PATH  + '/config.json') as config_json:
+    with open(os.path.join(DIR_PATH, 'config.json') as config_json:
         config = json.load(config_json)
-        password = config[PASSWORD]
-        credentials = config[CREDENTIALS]
+        password = config['password']
+        credentials = config['credentials']
 
 ```
 
