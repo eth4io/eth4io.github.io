@@ -10,6 +10,8 @@ author: eth4io
 
 
 
+
+
 I did an online code challenge for an interview last week. One of the questions can be solved easily with a priority queue. Therefore immediately I decided to use a max heap for the problem.
 
 
@@ -36,4 +38,31 @@ It was both frustrating and intriguing knowing this was the correct way to do ma
 
 
 
+## Use max heap in Python
 
+```python
+import heapq # standard python library for data structure: heap
+
+a_list = [4, 3, 9, 13, 7]
+heapq.heapify(a_list) # heapify a list into a min heap (not a max heap!)
+heapq.heappop(a_list) 
+heapq.heappush(a_list, 5)
+heapq.heappush(a_list, -1)
+print(a_list)
+> [-1, 5, 4, 13, 7, 9]
+```
+
+
+
+
+
+## Lessons learned
+
+Don't use builtin functions with underscore prefix. They are either experimental or obsolete and can be removed from the library without giving any notice to the community.
+
+
+
+## References
+
+* What do I use for a max-heap implementation in Python?, https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python
+*  heapq — Heap queue algorithm,https://docs.python.org/2/library/heapq.html
